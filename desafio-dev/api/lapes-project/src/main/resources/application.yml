@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: lapes-project
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5433/lapes_ecommerce
+    username: lapes_user
+    password: lapes_password
+  
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
